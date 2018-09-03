@@ -19,3 +19,18 @@ class articles(models.Model):
     tags = models.CharField(max_length = 255)
     create_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+
+
+class comments(models.Model):
+    uid = models.IntegerField()
+    title = models.CharField(max_length= 255)
+    content = models.TextField()
+    create_at = models.DateTimeField()
+    updated_at = models.DateTimeField()
+
+class comment(models.Model):
+    uid = models.IntegerField()
+    title = models.CharField(max_length= 255)
+    content = models.TextField()
+    create_at = models.DateTimeField()
+    updated_at = models.DateTimeField()
